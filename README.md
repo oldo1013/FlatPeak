@@ -9,7 +9,7 @@ git clone https://github.com/oldo1013/FlatPeak.git
 ```
 2. Move to folder 
 ```shell
-cd TestTask_FlatPeak
+cd FlatPeak
 ```
 3. Install dependencies using command below:
 ```shell
