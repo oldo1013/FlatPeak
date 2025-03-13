@@ -160,8 +160,7 @@ class APIRequests:
                                                  headers=self.headers,
                                                  params={"direction": "IMPORT",
                                                          "end_time": end_time,
-                                                         "start_time": current_time,
-                                                         "include_carbon": True})
-        with open("response_rates.json", "w") as f:
-            f.write(response_tariff_rates.text)
+                                                         "start_time": current_time})
+        # with open("response_rates.json", "w") as f:
+        #     f.write(response_tariff_rates.text)
         return response_tariff_rates.json()

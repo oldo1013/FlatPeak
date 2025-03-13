@@ -16,7 +16,8 @@ base64_bytes = base64.b64encode(Creds_bytes)
 Encoded_creds = base64_bytes.decode("ascii")
 auth_header = {"Authorization": "Basic " + Encoded_creds}
 
+Date_time_format = "%Y-%m-%dT%H:%M:%SZ"
 
-current_time = datetime.now().strftime("%Y-%m-%dT%H:%M:%SZ")
+current_time = datetime.now().strftime(Date_time_format)
 end_time = (datetime.now() + timedelta(days=1)).replace(hour=0, minute=0, second=0, microsecond=0).strftime(
-    "%Y-%m-%dT%H:%M:%SZ")
+    Date_time_format)
